@@ -85,9 +85,7 @@ a
     display:flex;
     .list-contact
     {
-        position:absolute;
-        top:39px;
-        right: 0;
+        position: relative;
         width:40%;
         display:flex;
         flex-direction: column;
