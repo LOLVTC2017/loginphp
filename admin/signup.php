@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
     <!-- <title>Signup Form</title> -->
+    <script src="https://kit.fontawesome.com/76ee6cfa25.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
@@ -53,7 +54,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form">
-                <form action="signup-user.php" method="POST" autocomplete="">
+                <form action="signup.php" method="POST" autocomplete="">
+                    <a href="/login/index.php"><i class="fas fa-long-arrow-alt-left"></i>
                     <h2 class="text-center">Signup Form</h2>
                     <p class="text-center">It's quick and easy.</p>
                     <div class="form-group">

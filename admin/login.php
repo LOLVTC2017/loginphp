@@ -1,9 +1,13 @@
+<?php session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
     <!-- <title>Login Form</title> -->
+    <script src="https://kit.fontawesome.com/76ee6cfa25.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <style>
@@ -51,11 +55,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form login-form">
-                <form action="login-user.php" method="POST" autocomplete="">
+                <form action="login.php" method="POST" autocomplete="">
+                    <a href="/login/index.php"><?php session_destroy() ?><i class="fas fa-long-arrow-alt-left"></i>
+
+</a>
                     <h2 class="text-center">Login Form</h2>
                     <p class="text-center">Login with your email and password.</p>
                     <div class="form-group">
-                        <input class="form-control" type="email" name="email" placeholder="Email Address" >
+                        <input class="form-control" type="text" name="username" placeholder="User Name" >
                     </div>
                     <div class="form-group">
                         <input class="form-control" type="password" name="password" placeholder="Password" required>
